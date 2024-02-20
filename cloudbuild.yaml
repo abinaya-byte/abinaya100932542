@@ -6,8 +6,8 @@ steps:
 
   # Deploy the Docker container to Google Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: 'sh'
-    args: 
+  entrypoint: 'sh'
+  args: 
       - '-c'
       - |
         gcloud run deploy nodejs-app \
