@@ -5,7 +5,7 @@ steps:
   args: ['push', 'us-central1-docker.pkg.dev/abinaya-devops-414904/abinaya-100932542/dockerimage:$COMMIT_SHA']
 
   # Deploy the Docker container to Google Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'sh'
     args: 
       - '-c'
