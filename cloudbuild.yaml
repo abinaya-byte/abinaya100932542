@@ -1,5 +1,5 @@
  steps:
-  # Build the Docker image kevin
+  # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'us-central1-docker.pkg.dev/abinaya-devops-414904/abinaya-100932542/dockerimage:${COMMIT_SHA}', '.']
   # Push the Docker image to the artifact registry
